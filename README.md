@@ -206,6 +206,17 @@ chai.use(chaiAsPromised);
 
 You can of course put this code in a common test fixture file; for an example using [Mocha][], see [the Chai as Promised tests themselves][fixturedemo].
 
+#### ES6
+
+```es6
+import * as chai from 'chai'; // import chai from 'chai'; or import {use} from 'chai'; also works
+import chaiAsPromised from 'chai-as-promised';
+
+chai.use(chaiAsPromised);
+```
+
+
+
 ### AMD
 
 Chai as Promised supports being used as an [AMD][amd] module, registering itself anonymously (just like Chai). So, assuming you have configured your loader to map the Chai and Chai as Promised files to the respective module IDs `"chai"` and `"chai-as-promised"`, you can use them as follows:
